@@ -1,0 +1,79 @@
+{
+    "add_is_visible": true,
+    "can_fit_height": true,
+    "can_fit_width": false,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 20,
+        "width": 20
+    },
+    "display": "Cards Deck (PRO)",
+    "events": {
+        "ABq": {
+            "caption": "clickedCard",
+            "name": "clickedCard"
+        }
+    },
+    "fields": {
+        "ABd": {
+            "caption": "Display dislike button",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "displaydislike",
+            "rank": 0
+        },
+        "ABe": {
+            "caption": "Display like button",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "displaylike",
+            "rank": 1
+        },
+        "ABf": {
+            "caption": "Display reload button",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "displayreload",
+            "rank": 2
+        },
+        "ABg": {
+            "caption": "Display send to the back button",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "displaysendtoback",
+            "rank": 3
+        },
+        "ABl": {
+            "caption": "cards",
+            "doc": "with fiels named as: bodytext, title",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "cards",
+            "rank": 4,
+            "value": "_any_thing"
+        },
+        "ABn": {
+            "caption": "Show tip of cards behind",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "showbehind",
+            "rank": 5
+        }
+    },
+    "has_reset_fn": false,
+    "icon": "ion-android-funnel",
+    "property_applications": {
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "ABp": {
+            "caption": "cardClicked",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "cardClicked",
+            "value": "text"
+        }
+    }
+}
