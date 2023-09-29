@@ -1,0 +1,53 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 600,
+        "width": 400
+    },
+    "display": "Cards Deck [Elements ID]",
+    "fields": {
+        "ABK": {
+            "caption": "Display dislike button",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "displaydislike",
+            "rank": 0
+        },
+        "ABL": {
+            "caption": "Display like button",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "displaylike",
+            "rank": 1
+        },
+        "ABM": {
+            "caption": "Display reload button",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "displayreload",
+            "rank": 2
+        },
+        "ABN": {
+            "caption": "Display send to the back button",
+            "default_val": true,
+            "editor": "Checkbox",
+            "name": "displaysendtoback",
+            "rank": 3
+        },
+        "ABR": {
+            "caption": "cards ID attributes ",
+            "default_val": "card1,card2,card3",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "cards_id_attributes",
+            "rank": 4,
+            "value": "text"
+        }
+    },
+    "icon": "ion-android-funnel",
+    "property_applications": {
+        "MinWidth": true,
+        "resizable": true
+    }
+}
