@@ -6,13 +6,15 @@ function(instance, properties, context) {
   //$("body").append(s);
   //removes glitch of appending two children to instance
 
+  const initCards = instance.data.initCards
   const instanceID = instance.data.id;
   // let instanceID = instance.canvas[0].bubble_data.bubble_instance._visibility_demand._ar_object.id
   if (instance.canvas[0].children.length < 1) {
-    var s = document.createElement("div");
-    s.id = "cardsDeck" + instanceID;
-    s.style.overflow = "visible";
-    s.innerHTML =
+    const tinderWrapper = document.createElement("div");
+    instance.data.tinderWrapper = tinderWrapper;
+    tinderWrapper.id = "cardsDeck" + instanceID;
+    tinderWrapper.style.overflow = "visible";
+    tinderWrapper.innerHTML =
       `<style>
 
 
@@ -211,7 +213,7 @@ function(instance, properties, context) {
       `"><p style="color: gray">⎋</p></button>
       </div>
     </div>`;
-    instance.canvas[0].appendChild(s);
+    instance.canvas[0].appendChild(tinderWrapper);
     instance.canvas[0].style.overflow = "visible";
 
     if (properties.displaydislike) {
@@ -254,98 +256,39 @@ function(instance, properties, context) {
     
 
     $(document).ready(function () {
-      let arrCardsID = properties.cards_id_attributes.split(",");
+      const arrCardsID = properties.cards_id_attributes.split(",");
+      instance.data.arrList = arrCardsID
+      instance.data.initStateCards(arrCardsID);
 
       arrCardsID.forEach(function (value, i) {
-        let cardsContainer = document.createElement("div");
-        cardsContainer.className = "tinder--card" + instanceID;
+        
 
-        cardsContainer = document.getElementById(arrCardsID[i]);
+        const cardsContainer = document.getElementById(arrCardsID[i]);
         //cardsContainer = document.querySelector('#'+arrCardsID[i]).cloneNode( true );
         //cardsContainer.setAttribute( 'id', "clonedCard"+i );
-        console.log("fetched cards", cardsContainer);
+        // console.log("fetched cards", cardsContainer);
 
         cardsContainer.classList.add("tinder--card" + instanceID);
-
+        cardsContainer.setAttribute("data-index", i + 1); // +1 adjust for the bubble database
         document
           .getElementById("cardsContainer" + instanceID)
           .appendChild(cardsContainer);
       });
 
-      var tinderContainer = document.querySelector(".tinder");
-      var allCards = document.querySelectorAll(".tinder--card" + instanceID);
-      var nope = document.getElementById("nope" + instanceID);
-      var love = document.getElementById("love" + instanceID);
-      var reload = document.getElementById("reload" + instanceID);
-      var sendback = document.getElementById("sendback" + instanceID);
+      const tinderContainer = document.querySelector(".tinder");
+      instance.data.tinderContainer = tinderContainer;
 
-      function reloadCards() {
-        return function (event) {
-          var cards = document.querySelectorAll(
-            "div.tinder--card" + instanceID + ".removed"
-          );
-          cards.forEach((card) => {
-            card.classList.remove("removed");
-            card.style.transform = "";
-          });
-          initCards();
-        };
-      }
-
-      function sendFrontToBack() {
-        return function (event) {
-          var cards = document.querySelectorAll(".tinder--card" + instanceID);
-          var cardsNumber = cards.length;
-          cards.forEach((card) => {
-            if (card.style.zIndex !== cards.length.toString()) {
-              card.style.zIndex = (parseInt(card.style.zIndex) + 1).toString();
-              var index = cardsNumber - card.style.zIndex;
-              card.style.transform =
-                "scale(" +
-                (20 - index) / 20 +
-                ") translateY(-" +
-                30 * index +
-                "px)";
-              card.style.opacity = 1;
-            } else {
-              card.style.zIndex = "1";
-              var index = cardsNumber - card.style.zIndex;
-              card.style.transform =
-                "scale(" +
-                (20 - index) / 20 +
-                ") translateY(-" +
-                30 * index +
-                "px)";
-              card.style.opacity = 1;
-            }
-          });
-        };
-      }
-
-      function initCards(card, index) {
-        var newCards = document.querySelectorAll(
-          ".tinder--card" + instanceID + ":not(.removed)"
-        );
-
-        newCards.forEach(function (card, index) {
-          card.style.zIndex = allCards.length - index;
-          card.style.transform =
-            "scale(" +
-            (20 - index) / 20 +
-            ") translateY(-" +
-            30 * index +
-            "px)";
-          card.style.opacity = (10 - index) / 10;
-        });
-
-        tinderContainer.classList.add("loaded");
-      }
+      const allCards = document.querySelectorAll(".tinder--card" + instanceID);
+      const nope = document.getElementById("nope" + instanceID);
+      const love = document.getElementById("love" + instanceID);
+      const reload = document.getElementById("reload" + instanceID);
+      const sendback = document.getElementById("sendback" + instanceID);
 
       initCards();
 
       allCards.forEach(function (el) {
         var hammertime = new Hammer(el);
-
+        console.log('hammertime', hammertime)
         hammertime.on("pan", function (event) {
           el.classList.add("moving");
         });
@@ -371,86 +314,16 @@ function(instance, properties, context) {
             "deg)";
         });
 
-        hammertime.on("panend", function (event) {
-          el.classList.remove("moving");
-          tinderContainer.classList.remove("tinder_love");
-          tinderContainer.classList.remove("tinder_nope");
-
-          var moveOutWidth = document.body.clientWidth;
-          var keep =
-            Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
-
-          event.target.classList.toggle("removed", !keep);
-
-          if (keep) {
-            event.target.style.transform = "";
-          } else {
-            var endX = Math.max(
-              Math.abs(event.velocityX) * moveOutWidth,
-              moveOutWidth
-            );
-            var toX = event.deltaX > 0 ? endX : -endX;
-            var endY = Math.abs(event.velocityY) * moveOutWidth;
-            var toY = event.deltaY > 0 ? endY : -endY;
-            var xMulti = event.deltaX * 0.03;
-            var yMulti = event.deltaY / 80;
-            var rotate = xMulti * yMulti;
-              
-              //adjust x coordinate
-      const elementWidth = el.clientWidth;
-      const {clientHeight, clientWidth} = document.body
-      if(toX > 0 && toX < clientWidth + elementWidth) toX += clientWidth + elementWidth
-      else if (toX < 0 && toX > -elementWidth + toX) toX -= clientWidth + elementWidth
-
-      if(toY > clientHeight) toY = clientHeight - elementWidth - elementWidth/50
-
-            event.target.style.transform =
-              "translate(" +
-              toX +
-              "px, " +
-              (toY + event.deltaY) +
-              "px) rotate(" +
-              rotate +
-              "deg)";
-            initCards();
-          }
-        });
+        hammertime.on("panend", instance.data.hammertime_panned_handler(el));
       });
 
-      function createButtonListener(love) {
-        return function (event) {
-          var cards = document.querySelectorAll(
-            ".tinder--card" + instanceID + ":not(.removed)"
-          );
-          var moveOutWidth = document.body.clientWidth * 1.5;
-
-          if (!cards.length) return false;
-
-          var card = cards[0];
-
-          card.classList.add("removed");
-
-          if (love) {
-            card.style.transform =
-              "translate(" + moveOutWidth + "px, -100px) rotate(-30deg)";
-          } else {
-            card.style.transform =
-              "translate(-" + moveOutWidth + "px, -100px) rotate(30deg)";
-          }
-
-          initCards();
-
-          event.preventDefault();
-        };
-      }
-
-      var nopeListener = createButtonListener(false);
-      var loveListener = createButtonListener(true);
+      var nopeListener = instance.data.createButtonListener(false);
+      var loveListener = instance.data.createButtonListener(true);
 
       nope.addEventListener("click", nopeListener);
       love.addEventListener("click", loveListener);
-      reload.addEventListener("click", reloadCards());
-      sendback.addEventListener("click", sendFrontToBack());
+      reload.addEventListener("click", instance.data.reloadCards());
+      sendback.addEventListener("click", instance.data.sendFrontToBack());
     });
   }
 }
