@@ -1,4 +1,13 @@
 function(instance, properties, context) {
+  let listOfThings
+    try {
+      listOfThings = properties.cards_list.get(0, properties.cards_list.length());
+    } catch (error) {
+      // error bacause data is not ready - wait re-update
+    }
+    if(!listOfThings) return // do not init plugin while waiting for data from database
+    const {cards_template_id} = properties
+
   //conding here https://codepen.io/gabrielcardoso/pen/qBobjqm?editors=1010
   //var s = document.createElement("script");
   //s.type = "text/javascript";
@@ -285,9 +294,14 @@ function(instance, properties, context) {
     */
 
     //let arrTitles = properties.titles.replace(",,", ",REPLACED,").split(",")
-
-
-    let listOfThings = properties.cards.get(0, properties.cards.length());
+    // let listOfThings
+    // try {
+    //   listOfThings = properties.cards_list.get(0, properties.cards_list.length());
+    // } catch (error) {
+    //   debugger
+    //   console.log('error', error)
+    // }
+    //let listOfThings = properties.cards_list.get(0, properties.cards_list.length());
     instance.data.arrList = listOfThings;
     instance.data.initStateCards(listOfThings);
 
@@ -328,7 +342,7 @@ function(instance, properties, context) {
 			<style>
 			.imagecontainer${index}{
 				pointer-events: none;
-				background-image: url("${element.get("image_image")}");
+				background-image: url("${element.get(properties.cards_image)}");
 				height: 400px;
             }
 			</style>
@@ -341,8 +355,8 @@ function(instance, properties, context) {
       //cardsContainer.appendChild(containerChild)
       //console.log(element.listProperties())
 
-      var templateHTML = document.getElementById("cardtemplate").cloneNode(true);
-      templateHTML.id = "cardtemplate" + index;
+      var templateHTML = document.getElementById(cards_template_id).cloneNode(true);
+      templateHTML.id = cards_template_id + "" + index;
       templateHTML.style.pointerEvents = "none";
 
       //clicking without moving around
@@ -355,8 +369,8 @@ function(instance, properties, context) {
       });
       cardsContainer.addEventListener("mouseup", (e) => {
         if (clicked) {
-          console.log("card clicked", element.get("_id"));
-          instance.publishState("cardClicked", element.get("_id"));
+          console.log("card clicked", element.get(properties.cards_id));
+          instance.publishState("cardClicked", element.get(properties.cards_id));
           instance.triggerEvent("clickedCard");
         }
 
@@ -366,23 +380,23 @@ function(instance, properties, context) {
 
       templateHTML.childNodes.forEach((children) => {
         if (children.innerHTML.toLowerCase() === "Title".toLowerCase()) {
-          children.innerHTML = element.get("title_text");
+          children.innerHTML = element.get(properties.cards_title);
           children.style.width = "initial";
           children.style.minWidth = "initial";
         }
         if (children.innerHTML.toLowerCase() === "subtitle".toLowerCase()) {
-          children.innerHTML = element.get("bodytext_text");
+          children.innerHTML = element.get(properties.cards_text);
           children.style.width = "initial";
           children.style.minWidth = "initial";
         }
         try {
           if (children.childNodes[0].nodeName.toLowerCase() === "img") {
-            children.childNodes[0].src = element.get("image_image");
+            children.childNodes[0].src = element.get(properties.cards_image);
             //children.childNodes[0].style.height = "100%";
             children.childNodes[0].style.objectFit = "cover";
           }
         } catch (e) {
-          console.log("chield not available");
+          context.reportDebugger("no text or title was providen")
         }
       });
 
@@ -392,7 +406,7 @@ function(instance, properties, context) {
     });
 
     $(document).ready(function () {
-      document.getElementById("cardtemplate").style.display = "none";
+      document.getElementById(cards_template_id).style.display = "none";
 
       const tinderContainer = tinderWrapper.querySelector(".tinder");
       instance.data.tinderContainer = tinderContainer;

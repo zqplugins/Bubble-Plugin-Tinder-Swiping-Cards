@@ -1,4 +1,4 @@
 function(instance, context){
-	function reset(_0x45506c,_0x3d73a5){}
+	function reset(_0x193a4e,_0x2a846a){}
 	reset(instance, context);
 }

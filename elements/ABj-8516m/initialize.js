@@ -161,6 +161,7 @@ function(instance, context) {
 		  card.style.transform = "";
 		});
 		instance.data.initCards();
+		instance.publishState("type_of_last_action", "Reload Cards");
 	  };
 	}
 

@@ -1,3 +1,3 @@
 function(instance, properties, context) {
-  instance.data.createButtonListener(true)
+  instance.data.createButtonListener(true)()
 }

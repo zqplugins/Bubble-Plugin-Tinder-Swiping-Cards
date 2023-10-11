@@ -1,3 +1,3 @@
 function(instance, properties, context) {
-  instance.data.reloadCards(properties)()
+  instance.data.sendFrontToBack(properties)()
 }
