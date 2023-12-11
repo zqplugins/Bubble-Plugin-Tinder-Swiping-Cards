@@ -52,12 +52,9 @@ function(instance, context) {
 	};
   
 	instance.data.initCards = function () {
-	  const instanceID = instance.data.id;
 	  const tinderContainer = instance.data.tinderContainer
-	  //var newCards = instance.data.tinderContainer.querySelectorAll(".tinder--card" + instanceID + ":not(.removed)");
 	  const newCards = getCardsInTheOrder()
 	  newCards.forEach(function (card, index) {
-		// card.style.zIndex = allCards.length - index; // this is a not better way!
 		card.style.zIndex = newCards.length - index; // this is the right way!
 		card.style.transform = "scale(" + (20 - index) / 20 + ") translateY(-" + 30 * index + "px)";
 		card.style.opacity = (10 - index) / 10;
