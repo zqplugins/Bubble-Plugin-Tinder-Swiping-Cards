@@ -1,12 +1,9 @@
 function(instance, properties, context) {
   let listOfThings
-    try {
-      listOfThings = properties.cards_list.get(0, properties.cards_list.length());
-    } catch (error) {
-      console.log(error);
-    }
+  listOfThings = properties.cards_list.get(0, properties.cards_list.length());
+    
     if(!listOfThings) return // do not init plugin while waiting for data from database
-    const { cards_template_id } = properties;
+    let cards_template_id = properties.cards_template_id;
 
   instance.data.properties = properties
   const initCards = instance.data.initCards;
@@ -216,12 +213,14 @@ function(instance, properties, context) {
           children.style.minWidth = "initial";
         }
         try {
-          if (children.childNodes[0].nodeName.toLowerCase() === "img") {
-            children.childNodes[0].src = element.get(properties.cards_image);
-            children.childNodes[0].style.objectFit = "cover";
-          }
+            children.childNodes.forEach((el) => {
+            	if(el.nodeName.toLowerCase() === "img"){
+            		el.src = element.get(properties.cards_image);
+            		el.style.objectFit = "cover";
+            	}
+            })
         } catch (e) {
-          context.reportDebugger("no text or title was providen")
+            context.reportDebugger("no text or title was providen")
         }
       });
 

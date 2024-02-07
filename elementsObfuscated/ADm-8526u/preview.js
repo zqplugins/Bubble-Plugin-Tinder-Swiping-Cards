@@ -1,63 +1,59 @@
 function(instance, properties){
-	function _0x2023(_0x5016a4, _0x115661) {
-    var _0x4e2748 = _0x4e27();
-    return _0x2023 = function (_0x2023ed, _0x460766) {
-        _0x2023ed = _0x2023ed - 0x1b1;
-        var _0x93d6bd = _0x4e2748[_0x2023ed];
-        return _0x93d6bd;
-    }, _0x2023(_0x5016a4, _0x115661);
-}
-(function (_0x4c8867, _0x4602cc) {
-    var _0x4a2773 = _0x2023, _0x56b865 = _0x4c8867();
+	(function (_0x27219a, _0x960f63) {
+    var _0x213c6d = _0xadc6, _0x4e4077 = _0x27219a();
     while (!![]) {
         try {
-            var _0x1ecf60 = parseInt(_0x4a2773(0x1bf)) / 0x1 + -parseInt(_0x4a2773(0x1c4)) / 0x2 * (-parseInt(_0x4a2773(0x1bc)) / 0x3) + -parseInt(_0x4a2773(0x1c9)) / 0x4 + parseInt(_0x4a2773(0x1be)) / 0x5 * (parseInt(_0x4a2773(0x1b3)) / 0x6) + parseInt(_0x4a2773(0x1b9)) / 0x7 * (-parseInt(_0x4a2773(0x1c8)) / 0x8) + parseInt(_0x4a2773(0x1b6)) / 0x9 + -parseInt(_0x4a2773(0x1b2)) / 0xa;
-            if (_0x1ecf60 === _0x4602cc)
+            var _0x835e71 = parseInt(_0x213c6d(0x10d)) / 0x1 + parseInt(_0x213c6d(0x111)) / 0x2 + -parseInt(_0x213c6d(0x113)) / 0x3 + parseInt(_0x213c6d(0x11b)) / 0x4 + parseInt(_0x213c6d(0x119)) / 0x5 * (-parseInt(_0x213c6d(0x117)) / 0x6) + parseInt(_0x213c6d(0x10c)) / 0x7 * (parseInt(_0x213c6d(0x10f)) / 0x8) + -parseInt(_0x213c6d(0x10a)) / 0x9;
+            if (_0x835e71 === _0x960f63)
                 break;
             else
-                _0x56b865['push'](_0x56b865['shift']());
-        } catch (_0x1ef61f) {
-            _0x56b865['push'](_0x56b865['shift']());
+                _0x4e4077['push'](_0x4e4077['shift']());
+        } catch (_0x452d63) {
+            _0x4e4077['push'](_0x4e4077['shift']());
         }
     }
-}(_0x4e27, 0x43f9f));
-function _0x4e27() {
-    var _0x2facea = [
-        'div',
-        '138175PTobJO',
-        '7546hXHGdu',
-        'salmon',
-        'innerHTML',
-        'height',
-        'borderRadius',
-        '4iqbgos',
-        '20px',
-        'none',
-        '100%',
-        '575408XPcEjZ',
-        '375732ofIuYd',
-        'color',
-        'background',
-        '3266920MXeJsv',
-        '102mjhldN',
-        '5px',
-        'white',
-        '3299679jdIAPH',
-        'display',
-        'style',
-        '35uFNbYp',
-        'appendChild',
-        'canvas',
-        '322071uCKyCY'
-    ];
-    _0x4e27 = function () {
-        return _0x2facea;
-    };
-    return _0x4e27();
+}(_0x89c9, 0xd8e6e));
+function _0xadc6(_0x5ef125, _0x183623) {
+    var _0x89c91f = _0x89c9();
+    return _0xadc6 = function (_0xadc661, _0x5743bd) {
+        _0xadc661 = _0xadc661 - 0x10a;
+        var _0x5f18ad = _0x89c91f[_0xadc661];
+        return _0x5f18ad;
+    }, _0xadc6(_0x5ef125, _0x183623);
 }
-function preview(_0x4b3294, _0x157c8c) {
-    var _0x3c2108 = _0x2023;
-    s = document['createElement'](_0x3c2108(0x1bd)), s[_0x3c2108(0x1b8)][_0x3c2108(0x1b1)] = _0x3c2108(0x1c0), s['style'][_0x3c2108(0x1c3)] = _0x3c2108(0x1b4), s[_0x3c2108(0x1b8)]['width'] = _0x3c2108(0x1c7), s[_0x3c2108(0x1b8)][_0x3c2108(0x1c2)] = _0x3c2108(0x1c5), s[_0x3c2108(0x1c1)] = 'PREVIEW\x20NOT\x20AVAILABLE', s[_0x3c2108(0x1b8)][_0x3c2108(0x1ca)] = _0x3c2108(0x1b5), s[_0x3c2108(0x1b8)][_0x3c2108(0x1b7)] = _0x3c2108(0x1c6), _0x4b3294[_0x3c2108(0x1bb)][0x0][_0x3c2108(0x1ba)](s);
+function preview(_0x48ed48, _0x3bd5a8) {
+    var _0x168f29 = _0xadc6;
+    s = document[_0x168f29(0x118)]('div'), s[_0x168f29(0x115)]['background'] = _0x168f29(0x10e), s[_0x168f29(0x115)]['borderRadius'] = _0x168f29(0x112), s[_0x168f29(0x115)][_0x168f29(0x11d)] = _0x168f29(0x10b), s[_0x168f29(0x115)][_0x168f29(0x11e)] = '20px', s[_0x168f29(0x116)] = _0x168f29(0x11c), s['style'][_0x168f29(0x11f)] = _0x168f29(0x114), s[_0x168f29(0x115)][_0x168f29(0x110)] = 'none', _0x48ed48[_0x168f29(0x11a)][0x0]['appendChild'](s);
+}
+function _0x89c9() {
+    var _0x37594c = [
+        '4031732oTMBzg',
+        'PREVIEW\x20NOT\x20AVAILABLE',
+        'width',
+        'height',
+        'color',
+        '7443144FaXhDv',
+        '100%',
+        '4683385MZZAVJ',
+        '980222wZCfru',
+        'salmon',
+        '8cwXoqJ',
+        'display',
+        '3166672yPKPDm',
+        '5px',
+        '5119758LopEYO',
+        'white',
+        'style',
+        'innerHTML',
+        '2455542oxEFBj',
+        'createElement',
+        '10rbnunD',
+        'canvas'
+    ];
+    _0x89c9 = function () {
+        return _0x37594c;
+    };
+    return _0x89c9();
 }
 	preview(instance, properties);
 }
