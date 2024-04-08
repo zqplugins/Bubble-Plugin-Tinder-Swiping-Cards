@@ -6,6 +6,24 @@
         "width": 400
     },
     "display": "Cards Deck [Elements ID]",
+    "events": {
+        "AEZ": {
+            "caption": "Card disliked",
+            "name": "card_disliked"
+        },
+        "AEa": {
+            "caption": "Card liked",
+            "name": "card_liked"
+        },
+        "AEb": {
+            "caption": "Card reloaded",
+            "name": "card_reloaded"
+        },
+        "AEc": {
+            "caption": "Card Send To Back",
+            "name": "card_send_to_back"
+        }
+    },
     "fields": {
         "ABK": {
             "caption": "Display dislike button",
@@ -43,11 +61,94 @@
             "name": "cards_id_attributes",
             "rank": 4,
             "value": "text"
+        },
+        "AFB": {
+            "caption": "Like Icon",
+            "default_val": "fa fa-heart",
+            "doc": "class of the icon. Example: ,,fa fa-heart\"",
+            "editor": "StaticText",
+            "name": "like_icon",
+            "rank": 5
+        },
+        "AFC": {
+            "caption": "Reject Icon",
+            "default_val": "fa fa-remove",
+            "doc": "class of the icon. Example: ,,fa fa-remove\"",
+            "editor": "StaticText",
+            "name": "reject_icon",
+            "rank": 6
+        },
+        "AFL": {
+            "caption": "Like Icon Color",
+            "default_val": "rgba(220,50,213,1)",
+            "editor": "Color",
+            "name": "like_color",
+            "rank": 7
+        },
+        "AFM": {
+            "caption": "Reject Icon Color",
+            "default_val": "rgba(217,32,33,1)",
+            "editor": "Color",
+            "name": "reject_color",
+            "rank": 8
         }
     },
     "icon": "ion-android-funnel",
     "property_applications": {
         "MinWidth": true,
         "resizable": true
+    },
+    "states": {
+        "AET": {
+            "caption": "Disliked Cards",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "disliked_cards",
+            "value": "number"
+        },
+        "AEU": {
+            "caption": "Liked Cards",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "liked_cards",
+            "value": "number"
+        },
+        "AEV": {
+            "caption": "Left cards",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "left_cards",
+            "value": "number"
+        },
+        "AEW": {
+            "caption": "Index of last used card",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "index_of_last_card",
+            "value": "number"
+        },
+        "AEX": {
+            "caption": "Type of last action",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "type_of_last_action",
+            "value": "text"
+        },
+        "AEY": {
+            "caption": "Index of upper card",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "index_of_upper_card",
+            "value": "number"
+        }
     }
 }

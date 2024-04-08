@@ -1,6 +1,12 @@
 function(instance, properties, context) {
     const initCards = instance.data.initCards;
     const instanceID = instance.data.id;
+
+    let like_icon_parts = properties.like_icon.split(' ');
+	let like_icon = like_icon_parts[like_icon_parts.length - 1];
+
+	let reject_icon_parts = properties.reject_icon.split(' ');
+	let reject_icon = reject_icon_parts[reject_icon_parts.length - 1];
   
     const existingCardsDeck = document.getElementById("cardsDeck" + instanceID);
   
@@ -44,12 +50,12 @@ function(instance, properties, context) {
     margin-left: -50px;
     }
     
-    .tinder_love .fa-heart {
+    .tinder_love .${like_icon} {
     opacity: 0.7;
     transform: scale(1);
     }
     
-    .tinder_nope .fa-remove {
+    .tinder_nope .${reject_icon} {
     opacity: 0.7;
     transform: scale(1);
     }
@@ -156,12 +162,12 @@ function(instance, properties, context) {
     color: gray;
     }
     
-    .fa-heart {
-    color: #FFACE4;
+    .${like_icon}{
+    color: ${properties.like_color};
     }
     
-    .fa-remove {
-    color: salmon;
+    .${reject_icon} {
+    color: ${properties.reject_color};
     }
     .fa-files-o{
     color: lightblue;
@@ -172,8 +178,8 @@ function(instance, properties, context) {
     
     <div class="tinder loaded">
     <div class="tinder--status">
-    <i class="fa fa-remove"></i>
-    <i class="fa fa-heart"></i>
+    <i class="${properties.reject_icon}"></i>
+    <i class="${properties.like_icon}"></i>
     </div>
     
     <div class="tinder--cards` +

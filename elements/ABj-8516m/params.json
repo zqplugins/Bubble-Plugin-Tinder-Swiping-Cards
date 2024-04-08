@@ -12,52 +12,111 @@
         "ABq": {
             "caption": "clickedCard",
             "name": "clickedCard"
+        },
+        "AEP": {
+            "caption": "Card disliked",
+            "name": "card_disliked"
+        },
+        "AEQ": {
+            "caption": "Card liked",
+            "name": "card_liked"
+        },
+        "AER": {
+            "caption": "Card reloaded",
+            "name": "card_reloaded"
+        },
+        "AES": {
+            "caption": "Card Send To Back",
+            "name": "card_send_to_back"
         }
     },
     "fields": {
-        "ABd": {
-            "caption": "Display dislike button",
-            "default_val": true,
-            "editor": "Checkbox",
-            "name": "displaydislike",
-            "rank": 0
-        },
-        "ABe": {
-            "caption": "Display like button",
-            "default_val": true,
-            "editor": "Checkbox",
-            "name": "displaylike",
-            "rank": 1
-        },
-        "ABf": {
-            "caption": "Display reload button",
-            "default_val": true,
-            "editor": "Checkbox",
-            "name": "displayreload",
-            "rank": 2
-        },
-        "ABg": {
-            "caption": "Display send to the back button",
-            "default_val": true,
-            "editor": "Checkbox",
-            "name": "displaysendtoback",
-            "rank": 3
-        },
-        "ABl": {
-            "caption": "cards",
-            "doc": "with fiels named as: bodytext, title",
-            "editor": "DynamicValue",
-            "is_list": true,
-            "name": "cards",
-            "rank": 4,
-            "value": "_any_thing"
-        },
         "ABn": {
             "caption": "Show tip of cards behind",
             "default_val": true,
             "editor": "Checkbox",
             "name": "showbehind",
+            "rank": 0
+        },
+        "AEn": {
+            "caption": "Cards (App type)",
+            "editor": "custom_type",
+            "name": "cards_app_type",
+            "rank": 1
+        },
+        "AEo": {
+            "caption": "Cards title",
+            "editor": "custom_field_AEn",
+            "field_type_restriction": "text_image_file",
+            "name": "cards_title",
+            "rank": 2
+        },
+        "AEp": {
+            "caption": "Cards text",
+            "editor": "custom_field_AEn",
+            "field_type_restriction": "text_image_file",
+            "name": "cards_text",
+            "rank": 3
+        },
+        "AEq": {
+            "caption": "Cards image",
+            "editor": "custom_field_AEn",
+            "field_type_restriction": "text_image_file",
+            "name": "cards_image",
+            "rank": 4
+        },
+        "AEr": {
+            "caption": "Cards list",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "cards_list",
+            "rank": 6,
+            "value": "custom_data_AEn"
+        },
+        "AEs": {
+            "caption": "Cards id",
+            "doc": "unique id",
+            "editor": "custom_field_AEn",
+            "field_type_restriction": "text_image_file",
+            "name": "cards_id",
             "rank": 5
+        },
+        "AEt": {
+            "caption": "Card's template ID",
+            "default_val": "cardtemplate",
+            "editor": "StaticText",
+            "name": "cards_template_id",
+            "rank": 7
+        },
+        "AFD": {
+            "caption": "Like Icon",
+            "default_val": "fa fa-heart",
+            "doc": "class of the icon. Example: ,,fa fa-heart\"",
+            "editor": "StaticText",
+            "name": "like_icon",
+            "rank": 8
+        },
+        "AFE": {
+            "caption": "Reject Icon",
+            "default_val": "fa fa-remove",
+            "doc": "class of the icon. Example: ,,fa fa-remove\"",
+            "editor": "StaticText",
+            "name": "reject_icon",
+            "rank": 9
+        },
+        "AFH": {
+            "caption": "Like Color Icon",
+            "default_val": "rgba(202,29,205,1)",
+            "editor": "Color",
+            "name": "like_color",
+            "rank": 10
+        },
+        "AFI": {
+            "caption": "Reject Color Icon",
+            "default_val": "rgba(245,49,49,1)",
+            "editor": "Color",
+            "name": "reject_color",
+            "rank": 11
         }
     },
     "has_reset_fn": false,
@@ -74,6 +133,57 @@
             },
             "name": "cardClicked",
             "value": "text"
+        },
+        "AEJ": {
+            "caption": "Disliked Cards",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "disliked_cards",
+            "value": "number"
+        },
+        "AEK": {
+            "caption": "Liked Cards",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "liked_cards",
+            "value": "number"
+        },
+        "AEL": {
+            "caption": "Left cards",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "left_cards",
+            "value": "number"
+        },
+        "AEM": {
+            "caption": "Index of last used card",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "index_of_last_card",
+            "value": "number"
+        },
+        "AEN": {
+            "caption": "Type of last action",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "type_of_last_action",
+            "value": "text"
+        },
+        "AEO": {
+            "caption": "Index of upper card",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "index_of_upper_card",
+            "value": "number"
         }
     }
 }

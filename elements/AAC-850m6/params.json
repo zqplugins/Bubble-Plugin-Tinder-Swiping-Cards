@@ -6,6 +6,24 @@
         "width": 400
     },
     "display": "Cards Deck",
+    "events": {
+        "ADx": {
+            "caption": "Card disliked",
+            "name": "card_disliked"
+        },
+        "ADy": {
+            "caption": "Card liked",
+            "name": "card_liked"
+        },
+        "ADz": {
+            "caption": "Card reloaded",
+            "name": "card_reloaded"
+        },
+        "AEB": {
+            "caption": "Card Send To Back",
+            "name": "card_send_to_back"
+        }
+    },
     "fields": {
         "AAI": {
             "caption": "Titles",
@@ -54,7 +72,7 @@
             "rank": 7
         },
         "AAQ": {
-            "caption": "colors",
+            "caption": "Colors",
             "default_val": "#FA8072,#ADD8E6,#FFFFFF,#808080,#f5f5dc",
             "editor": "DynamicValue",
             "is_list": false,
@@ -64,7 +82,7 @@
             "value": "text"
         },
         "AAR": {
-            "caption": "figures",
+            "caption": "Figures",
             "editor": "DynamicValue",
             "is_list": true,
             "name": "figures",
@@ -94,11 +112,111 @@
             "name": "display_card_image",
             "rank": 10,
             "value": "boolean"
+        },
+        "AEv": {
+            "caption": "tinder_love",
+            "default_val": "fa fa-heart",
+            "editor": "DynamicValue",
+            "name": "tinder_love",
+            "rank": 11,
+            "value": "text"
+        },
+        "AEw": {
+            "caption": "tinder_nope",
+            "default_val": "fa fa-remove",
+            "editor": "DynamicValue",
+            "name": "tinder_nope",
+            "rank": 12,
+            "value": "text"
+        },
+        "AEz": {
+            "caption": "Like Icon",
+            "default_val": "fa fa-heart",
+            "doc": "class of the icon. Example: ,,fa fa-heart\"",
+            "editor": "StaticText",
+            "name": "like_icon",
+            "rank": 13
+        },
+        "AFA": {
+            "caption": "Reject Icon",
+            "default_val": "fa fa-remove",
+            "doc": "class of the icon. Example: ,,fa fa-remove\"",
+            "editor": "StaticText",
+            "name": "reject_icon",
+            "rank": 14
+        },
+        "AFN": {
+            "caption": "Reject Icon Color",
+            "default_val": "rgba(216,34,34,1)",
+            "editor": "Color",
+            "name": "reject_color",
+            "rank": 15
+        },
+        "AFO": {
+            "caption": "Like Icon Color",
+            "default_val": "rgba(209,36,216,1)",
+            "editor": "Color",
+            "name": "like_color",
+            "rank": 16
         }
     },
     "icon": "ion-android-funnel",
     "property_applications": {
         "MinWidth": true,
         "resizable": true
+    },
+    "states": {
+        "AEC": {
+            "caption": "Disliked Cards",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "disliked_cards",
+            "value": "number"
+        },
+        "AED": {
+            "caption": "Liked Cards",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "liked_cards",
+            "value": "number"
+        },
+        "AEE": {
+            "caption": "Left cards",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "left_cards",
+            "value": "number"
+        },
+        "AEF": {
+            "caption": "Index of last used card",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": false,
+            "name": "index_of_last_card",
+            "value": "number"
+        },
+        "AEH": {
+            "caption": "Type of last action",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "type_of_last_action",
+            "value": "text"
+        },
+        "AEI": {
+            "caption": "Index of upper card",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "index_of_upper_card",
+            "value": "number"
+        }
     }
 }

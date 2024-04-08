@@ -2,6 +2,12 @@ function(instance, properties, context) {
   let listOfThings
   listOfThings = properties.cards_list.get(0, properties.cards_list.length());
     
+	let like_icon_parts = properties.like_icon.split(' ');
+	let like_icon = like_icon_parts[like_icon_parts.length - 1];
+
+	let reject_icon_parts = properties.reject_icon.split(' ');
+	let reject_icon = reject_icon_parts[reject_icon_parts.length - 1];
+
     if(!listOfThings) return // do not init plugin while waiting for data from database
     let cards_template_id = properties.cards_template_id;
 
@@ -51,12 +57,12 @@ function(instance, properties, context) {
           margin-left: -50px;
         }
 
-        .tinder_love .fa-heart {
+        .tinder_love .${like_icon} {
           opacity: 0.7;
           transform: scale(1);
         }
 
-        .tinder_nope .fa-remove {
+        .tinder_nope .${reject_icon} {
           opacity: 0.7;
           transform: scale(1);
         }
@@ -137,12 +143,12 @@ function(instance, properties, context) {
           color: gray;
         }
 
-        .fa-heart {
-          color: #FFACE4;
+        .${like_icon} {
+          color: ${properties.like_color}; // #FFACE4;
         }
 
-        .fa-remove {
-          color: salmon;
+        .${reject_icon} {
+          color: ${properties.reject_color};
         }
 
         .fa-files-o{
@@ -153,8 +159,8 @@ function(instance, properties, context) {
 
         <div class="tinder loaded">
           <div class="tinder--status">
-            <i class="fa fa-remove"></i>
-            <i class="fa fa-heart"></i>
+            <i class="${properties.reject_icon}"></i>
+            <i class="${properties.like_icon}"></i>
           </div>
 
           <div class="tinder--cards` +
