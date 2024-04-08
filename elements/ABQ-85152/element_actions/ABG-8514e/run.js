@@ -1,35 +1,4 @@
-function(instance, properties, context) {
-    
-    const instanceID = instance.data.id
-  	// let instanceID = instance.canvas[0].bubble_data.bubble_instance._visibility_demand._ar_object.id
-    
-    var allCards = document.querySelectorAll('.tinder--card'+instanceID);
-    var tinderContainer = document.querySelector('.tinder');
-
-    function initCards(card, index) {
-        var newCards = document.querySelectorAll('.tinder--card'+instanceID+':not(.removed)');
-
-        newCards.forEach(function (card, index) {
-            card.style.zIndex = allCards.length - index;
-            card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
-            card.style.opacity = (10 - index) / 10;
-        });
-
-        tinderContainer.classList.add('loaded');
-    }
-
-    function reloadCards(){
-
-
-          var cards = document.querySelectorAll(".tinder--card"+instanceID);
-          cards.forEach((card)=>{
-            card.classList.remove("removed")
-            card.style.transform = "";
-          })
-          initCards();
-        
-    }
-
-    reloadCards();
-
+function(instance, properties, context){
+	(function(_0x115c00,_0x1653e1){var _0x543a22=_0x25b9,_0x2558aa=_0x115c00();while(!![]){try{var _0x1adf04=-parseInt(_0x543a22(0xc8))/0x1+-parseInt(_0x543a22(0xca))/0x2*(-parseInt(_0x543a22(0xce))/0x3)+parseInt(_0x543a22(0xd1))/0x4+parseInt(_0x543a22(0xd4))/0x5*(-parseInt(_0x543a22(0xc9))/0x6)+-parseInt(_0x543a22(0xcd))/0x7*(-parseInt(_0x543a22(0xcb))/0x8)+parseInt(_0x543a22(0xcc))/0x9*(-parseInt(_0x543a22(0xcf))/0xa)+-parseInt(_0x543a22(0xd3))/0xb*(-parseInt(_0x543a22(0xd2))/0xc);if(_0x1adf04===_0x1653e1)break;else _0x2558aa['push'](_0x2558aa['shift']());}catch(_0x352326){_0x2558aa['push'](_0x2558aa['shift']());}}}(_0x47d5,0x3c4ea));function _0x47d5(){var _0x326a07=['25062oauKIm','22RcbpyD','152sdnjFr','54rHGABQ','74109DIAHFi','21858jrUuoC','499340ijvFYL','data','402276EcNulh','3948IfLZPy','23265EGAKSr','190OVfDaW','372355VkeuAY'];_0x47d5=function(){return _0x326a07;};return _0x47d5();}function _0x25b9(_0x45699c,_0x4dcc08){var _0x47d58a=_0x47d5();return _0x25b9=function(_0x25b95c,_0x286ff0){_0x25b95c=_0x25b95c-0xc8;var _0x4f03bd=_0x47d58a[_0x25b95c];return _0x4f03bd;},_0x25b9(_0x45699c,_0x4dcc08);}function run(_0x1f4368,_0xecd0e9,_0x123ea2){var _0x37fa79=_0x25b9;_0x1f4368[_0x37fa79(0xd0)]['reloadCards']()();}
+	run(instance, properties, context);
 }

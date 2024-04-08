@@ -8,29 +8,37 @@
         "ADe": {
             "caption": "clickedCard",
             "name": "clickedCard"
+        },
+        "AEj": {
+            "caption": "Card disliked",
+            "name": "card_disliked"
+        },
+        "AEk": {
+            "caption": "Card liked",
+            "name": "card_liked"
+        },
+        "AEl": {
+            "caption": "Card reloaded",
+            "name": "card_reloaded"
+        },
+        "AEm": {
+            "caption": "Card Send To Back",
+            "name": "card_send_to_back"
         }
     },
     "fields": {
-        "ADn": {
-            "caption": "card height (vh)",
-            "default_val": 96,
-            "doc": "",
-            "editor": "StaticNumber",
-            "name": "card_height",
-            "rank": 1
-        },
         "ADo": {
             "caption": "⚠️ No missing data is allowed! Make sure your database is complete or there is a string default for missing values.",
             "editor": "Label",
             "name": "information",
-            "rank": 2
+            "rank": 1
         },
         "ADp": {
             "caption": "Titles",
             "default_val": "1,2,3,4,5,6,7,8,9,10,11,12",
             "editor": "DynamicValue",
             "name": "titles_text",
-            "rank": 3,
+            "rank": 2,
             "value": "text"
         },
         "ADq": {
@@ -38,7 +46,7 @@
             "default_val": "body1,body2,body3,body4,body5,body6,body7,body8,body9,body10,body11,body12",
             "editor": "DynamicValue",
             "name": "body_text",
-            "rank": 4,
+            "rank": 3,
             "value": "text"
         },
         "ADr": {
@@ -46,11 +54,11 @@
             "editor": "DynamicValue",
             "is_list": true,
             "name": "figures",
-            "rank": 5,
+            "rank": 4,
             "value": "_any_thing"
         },
         "ADs": {
-            "caption": "⚠️ Make sure you have a template with ID \"cardtemplate\" containing a \"Title\" a \"Subtitle\" and \"Image\". Also, uncheck this \"make element fixed-width\" for 100% screen width",
+            "caption": "⚠️ Make sure you have a template with ID \"cardtemplate\" containing a \"Title\" a \"Subtitle\" and \"Image\". ",
             "editor": "Label",
             "name": "information_1",
             "rank": 0
@@ -60,8 +68,48 @@
             "default_val": "1,2,3,4,5,6,7,8,9,10,11,12",
             "editor": "DynamicValue",
             "name": "card_id",
-            "rank": 6,
+            "rank": 5,
             "value": "text"
+        },
+        "AEu": {
+            "caption": "show_buttons",
+            "default_val": false,
+            "doc": "Show control buttons",
+            "editor": "DynamicValue",
+            "name": "show_buttons",
+            "optional": true,
+            "rank": 6,
+            "value": "boolean"
+        },
+        "AFF": {
+            "caption": "Like Icon",
+            "default_val": "fa fa-heart",
+            "doc": "class of the icon. Example: ,,fa fa-heart\"",
+            "editor": "StaticText",
+            "name": "like_icon",
+            "rank": 7
+        },
+        "AFG": {
+            "caption": "Reject Icon",
+            "default_val": "fa fa-remove",
+            "doc": "class of the icon. Example: ,,fa fa-remove\"",
+            "editor": "StaticText",
+            "name": "reject_icon",
+            "rank": 8
+        },
+        "AFJ": {
+            "caption": "Reject Color Icon",
+            "default_val": "rgba(245, 49, 49, 1)",
+            "editor": "Color",
+            "name": "reject_color",
+            "rank": 9
+        },
+        "AFK": {
+            "caption": "Like Color Icon",
+            "default_val": "rgba(202, 29, 205, 1)",
+            "editor": "Color",
+            "name": "like_color",
+            "rank": 10
         }
     },
     "has_reset_fn": false,
@@ -78,6 +126,57 @@
             },
             "name": "cardClicked",
             "value": "text"
+        },
+        "AEd": {
+            "caption": "Disliked Cards",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "disliked_cards",
+            "value": "number"
+        },
+        "AEe": {
+            "caption": "Liked Cards",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "liked_cards",
+            "value": "number"
+        },
+        "AEf": {
+            "caption": "Left cards",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "left_cards",
+            "value": "number"
+        },
+        "AEg": {
+            "caption": "Index of last used card",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "index_of_last_card",
+            "value": "number"
+        },
+        "AEh": {
+            "caption": "Type of last action",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "type_of_last_action",
+            "value": "text"
+        },
+        "AEi": {
+            "caption": "Index of upper card",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "index_of_upper_card",
+            "value": "number"
         }
     }
 }

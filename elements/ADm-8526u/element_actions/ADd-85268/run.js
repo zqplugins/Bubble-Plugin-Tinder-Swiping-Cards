@@ -1,31 +1,4 @@
-function(instance, properties, context) {
-
-    function sendFrontToBack(){
-        const instanceID = instance.data.id
- 		 // let instanceID = instance.canvas[0].bubble_data.bubble_instance._visibility_demand._ar_object.id
-        var cards = document.querySelectorAll(".tinder--card"+instanceID);
-        
-        var cardsNumber = cards.length
-        cards.forEach((card)=>{
-          if (card.style.zIndex !== cards.length.toString()){
-            card.style.zIndex = (parseInt(card.style.zIndex)+1).toString();
-            var index = cardsNumber - card.style.zIndex
-            if(properties.showbehind){
-        card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
-    }
-            card.style.opacity = 1
-          } else {
-            card.style.zIndex = "1";
-            var index = cardsNumber - card.style.zIndex
-            if(properties.showbehind){
-        card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
-    }
-            card.style.opacity = 1
-          }
-        })
-    }
-
-    sendFrontToBack();
-
-
+function(instance, properties, context){
+	(function(_0xd088e5,_0x2dd150){var _0x2a9ad1=_0x21f9,_0x4f9a59=_0xd088e5();while(!![]){try{var _0x4bfffc=-parseInt(_0x2a9ad1(0x144))/0x1*(parseInt(_0x2a9ad1(0x148))/0x2)+parseInt(_0x2a9ad1(0x149))/0x3*(parseInt(_0x2a9ad1(0x13f))/0x4)+-parseInt(_0x2a9ad1(0x143))/0x5*(-parseInt(_0x2a9ad1(0x140))/0x6)+parseInt(_0x2a9ad1(0x146))/0x7+parseInt(_0x2a9ad1(0x147))/0x8+-parseInt(_0x2a9ad1(0x141))/0x9+-parseInt(_0x2a9ad1(0x13d))/0xa*(parseInt(_0x2a9ad1(0x13e))/0xb);if(_0x4bfffc===_0x2dd150)break;else _0x4f9a59['push'](_0x4f9a59['shift']());}catch(_0x2e7cc3){_0x4f9a59['push'](_0x4f9a59['shift']());}}}(_0x3028,0xca76f));function _0x21f9(_0x497a6f,_0x358ed0){var _0x3028a4=_0x3028();return _0x21f9=function(_0x21f990,_0x2a5135){_0x21f990=_0x21f990-0x13d;var _0x80933b=_0x3028a4[_0x21f990];return _0x80933b;},_0x21f9(_0x497a6f,_0x358ed0);}function _0x3028(){var _0x232cb1=['4695Sknuls','9dWHmxE','sendFrontToBack','6681269QDEtbx','8532088Pefyvx','316262oTzYzc','3sKtVuk','41570nWqJLP','3806hSSoRX','3510284whjcGV','6624RvmdYT','2199681oCwISA','data'];_0x3028=function(){return _0x232cb1;};return _0x3028();}function run(_0x5b79c5,_0x3b5ade,_0x110a4d){var _0x12710=_0x21f9;_0x5b79c5[_0x12710(0x142)][_0x12710(0x145)]()();}
+	run(instance, properties, context);
 }

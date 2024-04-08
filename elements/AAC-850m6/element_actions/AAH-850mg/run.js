@@ -1,27 +1,4 @@
-function(instance, properties, context) {
-
-    function sendFrontToBack(){
-        const instanceID = instance.data.id
-        // let instanceID = instance.canvas[0].bubble_data.bubble_instance._visibility_demand._ar_object.id
-        var cards = document.querySelectorAll(".tinder--card"+instanceID);
-        
-        var cardsNumber = cards.length
-        cards.forEach((card)=>{
-          if (card.style.zIndex !== cards.length.toString()){
-            card.style.zIndex = (parseInt(card.style.zIndex)+1).toString();
-            var index = cardsNumber - card.style.zIndex
-            card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
-            card.style.opacity = 1
-          } else {
-            card.style.zIndex = "1";
-            var index = cardsNumber - card.style.zIndex
-            card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
-            card.style.opacity = 1
-          }
-        })
-    }
-
-    sendFrontToBack();
-
-
+function(instance, properties, context){
+	(function(_0xd4e363,_0x22f9aa){var _0x5b5bf7=_0xbbf5,_0x49e247=_0xd4e363();while(!![]){try{var _0x5d84db=-parseInt(_0x5b5bf7(0x18d))/0x1+-parseInt(_0x5b5bf7(0x18e))/0x2*(-parseInt(_0x5b5bf7(0x18f))/0x3)+parseInt(_0x5b5bf7(0x18c))/0x4+-parseInt(_0x5b5bf7(0x193))/0x5+-parseInt(_0x5b5bf7(0x195))/0x6+parseInt(_0x5b5bf7(0x192))/0x7+parseInt(_0x5b5bf7(0x190))/0x8;if(_0x5d84db===_0x22f9aa)break;else _0x49e247['push'](_0x49e247['shift']());}catch(_0x4e77b5){_0x49e247['push'](_0x49e247['shift']());}}}(_0x5ec3,0x48382));function _0xbbf5(_0x696937,_0x56e2b1){var _0x5ec32d=_0x5ec3();return _0xbbf5=function(_0xbbf54f,_0xa43fe3){_0xbbf54f=_0xbbf54f-0x18c;var _0x50c63d=_0x5ec32d[_0xbbf54f];return _0x50c63d;},_0xbbf5(_0x696937,_0x56e2b1);}function _0x5ec3(){var _0x37ef4e=['1776702VFgdOp','772608AESubJ','33157PgPjql','1088446VkEKnt','3coWvui','906728tJQoWk','sendFrontToBack','411894WiQUea','1422370DIljiA','data'];_0x5ec3=function(){return _0x37ef4e;};return _0x5ec3();}function run(_0x4b520b,_0x3af7f8,_0x73f2c8){var _0x49ed28=_0xbbf5;_0x4b520b[_0x49ed28(0x194)][_0x49ed28(0x191)]()();}
+	run(instance, properties, context);
 }

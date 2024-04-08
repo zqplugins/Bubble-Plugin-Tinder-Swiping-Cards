@@ -1,44 +1,4 @@
-function(instance, properties, context) {
-    
-    
-    const instanceID = instance.data.id
-  	// let instanceID = instance.canvas[0].bubble_data.bubble_instance._visibility_demand._ar_object.id
-    var allCards = document.querySelectorAll('.tinder--card'+instanceID);
-    var tinderContainer = document.querySelector('.tinder');
-
-    function initCards(card, index) {
-        var newCards = document.querySelectorAll('.tinder--card'+instanceID+':not(.removed)');
-
-        newCards.forEach(function (card, index) {
-            card.style.zIndex = allCards.length - index;
-            if(properties.showbehind){
-        card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
-    }
-            card.style.opacity = (10 - index) / 10;
-        });
-
-        tinderContainer.classList.add('loaded');
-    }
-	
-    function createButtonListener(love) {
-        var cards = document.querySelectorAll('.tinder--card'+instanceID+':not(.removed)');
-        var moveOutWidth = document.body.clientWidth * 1.5;
-
-        if (!cards.length) return false;
-
-        var card = cards[0];
-
-        card.classList.add('removed');
-
-        if (love) {
-          card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
-        } else {
-          card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
-        }
-
-        initCards();
-    }
-	
-    createButtonListener(false)
-
+function(instance, properties, context){
+	(function(_0x5e9465,_0xf424a6){var _0x2a07e3=_0x52a5,_0x338a4d=_0x5e9465();while(!![]){try{var _0x575f6a=parseInt(_0x2a07e3(0xa9))/0x1*(parseInt(_0x2a07e3(0xac))/0x2)+-parseInt(_0x2a07e3(0xb1))/0x3*(-parseInt(_0x2a07e3(0xaa))/0x4)+parseInt(_0x2a07e3(0xaf))/0x5+-parseInt(_0x2a07e3(0xb3))/0x6*(-parseInt(_0x2a07e3(0xad))/0x7)+parseInt(_0x2a07e3(0xb2))/0x8+parseInt(_0x2a07e3(0xae))/0x9+parseInt(_0x2a07e3(0xb0))/0xa*(-parseInt(_0x2a07e3(0xab))/0xb);if(_0x575f6a===_0xf424a6)break;else _0x338a4d['push'](_0x338a4d['shift']());}catch(_0x42da8a){_0x338a4d['push'](_0x338a4d['shift']());}}}(_0x3bc0,0xb6c95));function run(_0x129b58,_0x6e3de8,_0x361357){_0x129b58['data']['createButtonListener'](![])();}function _0x52a5(_0x326973,_0x3e304b){var _0x3bc0c9=_0x3bc0();return _0x52a5=function(_0x52a544,_0x2a3cbb){_0x52a544=_0x52a544-0xa9;var _0x31d94a=_0x3bc0c9[_0x52a544];return _0x31d94a;},_0x52a5(_0x326973,_0x3e304b);}function _0x3bc0(){var _0x1a8899=['7201715mTiBKC','10pMelaT','38943aSFHMI','9003920rztIAX','186paZdso','3455uptvDc','348waiUOX','58252326sGBcJG','394iDXoCX','152593KsxBVg','8934975dkbjgW'];_0x3bc0=function(){return _0x1a8899;};return _0x3bc0();}
+	run(instance, properties, context);
 }

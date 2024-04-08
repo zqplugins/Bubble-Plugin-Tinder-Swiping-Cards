@@ -1,34 +1,4 @@
-function(instance, properties, context) {
-    const instanceID = instance.data.id
-    // let instanceID = instance.canvas[0].bubble_data.bubble_instance._visibility_demand._ar_object.id
-    
-    var allCards = document.querySelectorAll('.tinder--card'+instanceID);
-    var tinderContainer = document.querySelector('.tinder');
-
-    function initCards(card, index) {
-        var newCards = document.querySelectorAll('.tinder--card'+instanceID+':not(.removed)');
-
-        newCards.forEach(function (card, index) {
-            card.style.zIndex = allCards.length - index;
-            card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
-            card.style.opacity = (10 - index) / 10;
-        });
-
-        tinderContainer.classList.add('loaded');
-    }
-
-    function reloadCards(){
-
-
-          var cards = document.querySelectorAll(".tinder--card"+instanceID);
-          cards.forEach((card)=>{
-            card.classList.remove("removed")
-            card.style.transform = "";
-          })
-          initCards();
-        
-    }
-
-    reloadCards();
-
+function(instance, properties, context){
+	function _0x55fc(){var _0x1a94b6=['8172283jPpJVo','190235TFCpnU','603728XHBHOM','116mHetTm','83HTkLKN','50SAYGFu','25414FMzXlN','data','897259BuoRmg','2714736uvwjeg','1078524vwvUFs','18SdKIVh'];_0x55fc=function(){return _0x1a94b6;};return _0x55fc();}function _0x2380(_0x13194a,_0xc5be){var _0x55fcff=_0x55fc();return _0x2380=function(_0x238027,_0x2182e4){_0x238027=_0x238027-0x86;var _0x6433c2=_0x55fcff[_0x238027];return _0x6433c2;},_0x2380(_0x13194a,_0xc5be);}(function(_0xc8f342,_0x596a2c){var _0x30c614=_0x2380,_0x174f38=_0xc8f342();while(!![]){try{var _0x23db57=parseInt(_0x30c614(0x86))/0x1*(parseInt(_0x30c614(0x88))/0x2)+parseInt(_0x30c614(0x8c))/0x3+parseInt(_0x30c614(0x91))/0x4*(-parseInt(_0x30c614(0x8f))/0x5)+-parseInt(_0x30c614(0x8b))/0x6+parseInt(_0x30c614(0x8e))/0x7+-parseInt(_0x30c614(0x90))/0x8*(-parseInt(_0x30c614(0x8d))/0x9)+parseInt(_0x30c614(0x87))/0xa*(-parseInt(_0x30c614(0x8a))/0xb);if(_0x23db57===_0x596a2c)break;else _0x174f38['push'](_0x174f38['shift']());}catch(_0x57f307){_0x174f38['push'](_0x174f38['shift']());}}}(_0x55fc,0xbbb9e));function run(_0x3ac23,_0x538c40,_0x499d6f){var _0x5833b8=_0x2380;_0x3ac23[_0x5833b8(0x89)]['reloadCards']()();}
+	run(instance, properties, context);
 }
