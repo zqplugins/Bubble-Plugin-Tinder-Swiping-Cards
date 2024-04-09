@@ -1,5 +1,5 @@
 function(instance, context){
-	function reset(_0x13cb09, _0x4b3db9) {
+	function reset(_0x1518a4, _0x41bc74) {
 }
 	reset(instance, context);
 }

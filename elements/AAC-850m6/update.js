@@ -1,5 +1,11 @@
 function(instance, properties, context) {
-  const initCards = instance.data.initCards
+	let like_icon_parts = properties.like_icon.split(' ');
+	let like_icon = like_icon_parts[like_icon_parts.length - 1];
+
+	let reject_icon_parts = properties.reject_icon.split(' ');
+	let reject_icon = reject_icon_parts[reject_icon_parts.length - 1];
+
+  const initCards = instance.data.initCards;
   const instanceID = instance.data.id;
 
   const existingCardsDeck = document.getElementById("cardsDeck" + instanceID);
@@ -8,14 +14,14 @@ function(instance, properties, context) {
     const imageList = properties.figures;
     const listCounter = imageList.length();
     const arrList = imageList.get(0, listCounter);
-    instance.data.arrList = arrList
+    instance.data.arrList = arrList;
     instance.data.initStateCards(arrList);
 
     const tinderWrapper = document.createElement("div");
     tinderWrapper.id = "cardsDeck" + instanceID;
     tinderWrapper.style.overflow = "visible";
     tinderWrapper.innerHTML =
-    ` <style>
+      ` <style>
         .tinder {
           overflow: visible;
           display: flex;
@@ -49,20 +55,20 @@ function(instance, properties, context) {
           margin-left: -50px;
         }
 
-        .tinder_love .fa-heart {
+        .tinder_love .${like_icon} {
           opacity: 0.7;
           transform: scale(1);
+          color: #FFACE4;
         }
 
-        .tinder_nope .fa-remove {
+        .tinder_nope .${reject_icon} {
           opacity: 0.7;
           transform: scale(1);
+          color: salmon;
         }
 
-        .tinder--cards` +
-            instanceID +
-            ` {
-        /* max-width: 440px */;
+        .tinder--cards${instanceID} {
+          /* max-width: 440px */;
           flex-grow: 1;
           padding-top: 40px;
           text-align: center;
@@ -73,9 +79,7 @@ function(instance, properties, context) {
           height: 28rem;
         }
 
-        .tinder--card` +
-            instanceID +
-            ` {
+        .tinder--card${instanceID} {
           display: inline-block;
           background: #ddd9d9;
           border-radius: 8px;
@@ -88,25 +92,19 @@ function(instance, properties, context) {
           cursor: grab;
         }
 
-        .moving.tinder--card` +
-            instanceID +
-            ` {
+        .moving.tinder--card${instanceID} {
           transition: none;
           cursor: -webkit-grabbing;
           cursor: -moz-grabbing;
           cursor: grabbing;
         }
 
-        .tinder--card` +
-            instanceID +
-            ` img {
+        .tinder--card${instanceID} img {
           max-width: 100%;
           pointer-events: none;
         }
 
-        .tinder--card` +
-            instanceID +
-            ` h3 {
+        .tinder--card${instanceID} h3 {
           margin-top: 16px;
           margin-bottom: 16px;
           font-size: 32px;
@@ -114,9 +112,7 @@ function(instance, properties, context) {
           pointer-events: none;
         }
 
-        .tinder--card` +
-            instanceID +
-            ` p {
+        .tinder--card${instanceID} p {
           margin-top: 16px;
           margin-bottom: 16px;
           font-size: 20px;
@@ -150,51 +146,35 @@ function(instance, properties, context) {
           vertical-align: middle;
         }
 
-        .fa-repeat{
+        .fa-repeat {
           color: gray;
         }
 
-        .fa-heart {
-          color: #FFACE4;
-        }
-
-        .fa-remove {
-          color: salmon;
-        }
-
-        .fa-files-o{
+        .fa-files-o {
           color: lightblue;
         }
+		
+		.removed {
+			display: none !important
+		}
       </style>
 
-        <div class="tinder loaded">
-          <div class="tinder--status">
-            <i class="fa fa-remove"></i>
-            <i class="fa fa-heart"></i>
-          </div>
-
-          <div class="tinder--cards` +
-            instanceID +
-            `" id="cardsContainer` +
-            instanceID +
-            `">
-          </div>
-
-          <div class="tinder--buttons">
-            <button id="nope` +
-            instanceID +
-            `"><p style="color: lightred">✕</p></button>
-            <button id="love` +
-            instanceID +
-            `"><p style="color: salmon">♡</p></button>
-            <button id="reload` +
-            instanceID +
-            `"><p style="color: lightblue">⟲</p></button>
-            <button id="sendback` +
-            instanceID +
-            `"><p style="color: gray">⎋</p></button>
-          </div>
+      <div class="tinder loaded">
+        <div class="tinder--status">
+          <i class="${properties.reject_icon}"></i>
+          <i class="${properties.like_icon}"></i>
         </div>
+
+        <div class="tinder--cards${instanceID}" id="cardsContainer${instanceID}">
+        </div>
+
+        <div class="tinder--buttons">
+          <button id="nope${instanceID}"><p style="color: lightred">✕</p></button>
+          <button id="love${instanceID}"><p style="color: #FFACE4">♡</p></button> <!-- Apply styles -->
+          <button id="reload${instanceID}"><p style="color: lightblue">⟲</p></button>
+          <button id="sendback${instanceID}"><p style="color: gray">⎋</p></button>
+        </div>
+      </div>
     `;
 
     instance.canvas[0].appendChild(tinderWrapper);
