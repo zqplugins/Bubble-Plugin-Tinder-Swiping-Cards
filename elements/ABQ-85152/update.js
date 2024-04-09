@@ -6,12 +6,6 @@ function(instance, properties, context) {
   //$("body").append(s);
   //removes glitch of appending two children to instance
 
-    let like_icon_parts = properties.like_icon.split(' ');
-	let like_icon = like_icon_parts[like_icon_parts.length - 1];
-
-	let reject_icon_parts = properties.reject_icon.split(' ');
-	let reject_icon = reject_icon_parts[reject_icon_parts.length - 1];
-
   const initCards = instance.data.initCards
   const instanceID = instance.data.id;
   // let instanceID = instance.canvas[0].bubble_data.bubble_instance._visibility_demand._ar_object.id
@@ -22,6 +16,9 @@ function(instance, properties, context) {
     tinderWrapper.style.overflow = "visible";
     tinderWrapper.innerHTML =
       `<style>
+
+
+
     .tinder {
       /* width: 500px */;
       /* height: 100vh */;
@@ -57,12 +54,12 @@ function(instance, properties, context) {
       margin-left: -50px;
     }
 
-    .tinder_love .${like_icon} {
+    .tinder_love .fa-heart {
       opacity: 0.7;
       transform: scale(1);
     }
 
-    .tinder_nope .${reject_icon} {
+    .tinder_nope .fa-remove {
       opacity: 0.7;
       transform: scale(1);
     }
@@ -174,16 +171,12 @@ function(instance, properties, context) {
         color: gray;
       }
 
-	.removed {
-		display: none !important
-	}
-
-   .${like_icon} {
-      color: ${properties.like_color};
+    .fa-heart {
+      color: #FFACE4;
     }
 
-    .${reject_icon} {
-      color: ${properties.reject_color};
+    .fa-remove {
+      color: salmon;
     }
       .fa-files-o{
         color: lightblue;
@@ -194,8 +187,8 @@ function(instance, properties, context) {
 
     <div class="tinder loaded">
       <div class="tinder--status">
-        <i class="${properties.reject_icon}"></i>
-        <i class="${properties.like_icon}"></i>
+        <i class="fa fa-remove"></i>
+        <i class="fa fa-heart"></i>
       </div>
 
       <div class="tinder--cards` +

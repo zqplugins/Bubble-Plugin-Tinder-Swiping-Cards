@@ -1,4 +1,195 @@
-function(instance, context){
-	(function(_0x4097d6,_0x234b66){const _0x781cf9=_0x3ec8,_0x332c16=_0x4097d6();while(!![]){try{const _0x226326=parseInt(_0x781cf9(0x1ac))/0x1+-parseInt(_0x781cf9(0x19f))/0x2*(parseInt(_0x781cf9(0x16c))/0x3)+-parseInt(_0x781cf9(0x197))/0x4*(-parseInt(_0x781cf9(0x18f))/0x5)+parseInt(_0x781cf9(0x192))/0x6*(-parseInt(_0x781cf9(0x1ba))/0x7)+parseInt(_0x781cf9(0x199))/0x8*(-parseInt(_0x781cf9(0x174))/0x9)+parseInt(_0x781cf9(0x1b2))/0xa*(parseInt(_0x781cf9(0x191))/0xb)+parseInt(_0x781cf9(0x18e))/0xc;if(_0x226326===_0x234b66)break;else _0x332c16['push'](_0x332c16['shift']());}catch(_0x220660){_0x332c16['push'](_0x332c16['shift']());}}}(_0x47c3,0x8db7c));function _0x47c3(){const _0x117935=['tinder_nope',')\x20translateY(-','div.tinder--card','deltaY','initStateCards','querySelectorAll','initCards','dataset','862794WABfMS','add','triggerEvent','px)\x20rotate(','from','body','1559350jWOVTj','liked_cards','sendFrontToBack','dislike','px,\x20-100px)\x20rotate(30deg)','card_send_to_back','style','remove','453663rnVyQj','length','card_liked','target','preventDefault','dislikeCards','removed','px)','like','arrList','747Bpbpco','data','forEach','zIndex','Reload\x20Cards','reloadCards','moving',':not(.removed)','306YzINIO','transform','deltaX','translate(','querySelector','find','.tinder--card','opacity','clientWidth','velocityX','index_of_upper_card','publishState','tinder_love','index','left_cards','index_of_last_card','delete','hammertime_panned_handler','card_disliked','indexUpperCard','classList','abs','.removed','scale(','toString','stateHandler','11214276bSGHOz','4845205PuBaXZ','push','33DBjuZR','66crpmYL','sendToBack','px,\x20-100px)\x20rotate(-30deg)','reduce','translate(-','4aEmiIm','substr','231560lbNvYe','toggle','type_of_last_action','disliked_cards','tinderContainer','likeCards','7684MIkjuN','leftCards','now','loaded','px,\x20'];_0x47c3=function(){return _0x117935;};return _0x47c3();}function _0x3ec8(_0x1221c5,_0x2eeaac){const _0x47c3b6=_0x47c3();return _0x3ec8=function(_0x3ec82b,_0x588e90){_0x3ec82b=_0x3ec82b-0x16c;let _0x35f9b6=_0x47c3b6[_0x3ec82b];return _0x35f9b6;},_0x3ec8(_0x1221c5,_0x2eeaac);}function initialize(_0x5dda91,_0x2691ab){const _0x108b80=_0x3ec8;_0x5dda91[_0x108b80(0x16d)]['id']=Date[_0x108b80(0x1a1)]()['toString'](0x24)+Math['random']()[_0x108b80(0x18c)](0x24)[_0x108b80(0x198)](0x2),_0x5dda91[_0x108b80(0x16d)][_0x108b80(0x18d)]=function(_0x46df92,_0xef8e04){const _0x4b9635=_0x108b80,_0x410745=Number(_0x46df92[_0x4b9635(0x1ab)][_0x4b9635(0x181)]),{leftCards:_0x48bb97}=_0x5dda91[_0x4b9635(0x16d)];_0x48bb97[_0x4b9635(0x184)](_0x410745);if(_0xef8e04==='like')_0x5dda91[_0x4b9635(0x16d)][_0x4b9635(0x19e)][_0x4b9635(0x1ad)](_0x410745),_0x5dda91['publishState'](_0x4b9635(0x1b3),Array[_0x4b9635(0x1b0)](_0x5dda91[_0x4b9635(0x16d)][_0x4b9635(0x19e)])),_0x5dda91[_0x4b9635(0x1ae)](_0x4b9635(0x1bc));else{if(_0xef8e04===_0x4b9635(0x1b5))_0x5dda91[_0x4b9635(0x16d)][_0x4b9635(0x1bf)]['add'](_0x410745),_0x5dda91[_0x4b9635(0x17f)](_0x4b9635(0x19c),Array[_0x4b9635(0x1b0)](_0x5dda91[_0x4b9635(0x16d)]['dislikeCards'])),_0x5dda91[_0x4b9635(0x1ae)](_0x4b9635(0x186));else _0xef8e04===_0x4b9635(0x193)&&(_0x48bb97[_0x4b9635(0x184)](_0x410745),_0x48bb97['add'](_0x410745),_0x5dda91[_0x4b9635(0x16d)][_0x4b9635(0x1a0)][0x0],_0x5dda91[_0x4b9635(0x1ae)](_0x4b9635(0x1b7)));}const _0x573c01=Array['from'](_0x48bb97)[0x0];_0x5dda91[_0x4b9635(0x16d)]['indexUpperCard']=_0x573c01,_0x5dda91[_0x4b9635(0x17f)](_0x4b9635(0x183),_0x410745),_0x5dda91[_0x4b9635(0x17f)](_0x4b9635(0x17e),_0x573c01),_0x5dda91[_0x4b9635(0x17f)](_0x4b9635(0x19b),_0xef8e04),_0x5dda91[_0x4b9635(0x17f)](_0x4b9635(0x182),Array[_0x4b9635(0x1b0)](_0x48bb97)),_0x5dda91[_0x4b9635(0x16d)][_0x4b9635(0x1a0)]=_0x48bb97;},_0x5dda91['data'][_0x108b80(0x1a8)]=function(_0x1c5f1c){const _0x54ceda=_0x108b80,_0x64b334=new Set();_0x5dda91[_0x54ceda(0x16d)][_0x54ceda(0x1a0)]=_0x64b334,_0x1c5f1c['forEach']((_0xba7f89,_0x192a2a)=>{const _0x320a59=_0x54ceda;_0x64b334[_0x320a59(0x1ad)](_0x192a2a+0x1);}),_0x5dda91['data']['dislikeCards']=new Set(),_0x5dda91[_0x54ceda(0x16d)][_0x54ceda(0x19e)]=new Set();const _0x4dda8b=Array[_0x54ceda(0x1b0)](_0x64b334)[0x0];_0x5dda91['data'][_0x54ceda(0x187)]=_0x4dda8b,_0x5dda91[_0x54ceda(0x17f)](_0x54ceda(0x17e),_0x4dda8b),_0x5dda91[_0x54ceda(0x17f)](_0x54ceda(0x1b3),Array[_0x54ceda(0x1b0)](_0x5dda91[_0x54ceda(0x16d)][_0x54ceda(0x19e)])),_0x5dda91['publishState']('disliked_cards',Array['from'](_0x5dda91[_0x54ceda(0x16d)]['dislikeCards'])),_0x5dda91['publishState']('left_cards',Array[_0x54ceda(0x1b0)](_0x64b334)),_0x5dda91[_0x54ceda(0x16d)][_0x54ceda(0x1a0)]=_0x64b334;},_0x5dda91[_0x108b80(0x16d)][_0x108b80(0x1aa)]=function(){const _0x65e056=_0x108b80,_0x3daacb=_0x5dda91['data']['id'],_0x580609=_0x5dda91[_0x65e056(0x16d)][_0x65e056(0x19d)],_0x3e13a4=_0xb405bc();_0x3e13a4['forEach'](function(_0x1a17a7,_0x26d94a){const _0x54e5ca=_0x65e056;_0x1a17a7[_0x54e5ca(0x1b8)][_0x54e5ca(0x16f)]=_0x3e13a4[_0x54e5ca(0x1bb)]-_0x26d94a,_0x1a17a7[_0x54e5ca(0x1b8)][_0x54e5ca(0x175)]=_0x54e5ca(0x18b)+(0x14-_0x26d94a)/0x14+_0x54e5ca(0x1a5)+0x1e*_0x26d94a+_0x54e5ca(0x1c1),_0x1a17a7['style'][_0x54e5ca(0x17b)]=(0xa-_0x26d94a)/0xa;}),_0x580609['classList'][_0x65e056(0x1ad)](_0x65e056(0x1a2));};function _0x8cf9f6(_0x16f53a){const _0xd67431=_0x108b80,_0x276010=_0x5dda91[_0xd67431(0x16d)]['id'];_0x16f53a=_0x16f53a?_0x16f53a:_0x5dda91['data']['tinderContainer'][_0xd67431(0x1a9)](_0xd67431(0x17a)+_0x276010+_0xd67431(0x173));const _0x52aaf0=[..._0x16f53a][_0xd67431(0x179)](_0x170154=>Number(_0x170154[_0xd67431(0x1ab)][_0xd67431(0x181)])===_0x5dda91[_0xd67431(0x16d)][_0xd67431(0x187)]);return _0x52aaf0;}function _0xb405bc(){const _0x3f3025=_0x108b80,_0x2b02a1=_0x5dda91[_0x3f3025(0x16d)]['id'],_0x24ecea=_0x5dda91[_0x3f3025(0x16d)][_0x3f3025(0x19d)][_0x3f3025(0x178)](_0x3f3025(0x17a)+_0x2b02a1+_0x3f3025(0x173))?.['parentElement'];if(!_0x24ecea)return[];return Array[_0x3f3025(0x1b0)](_0x5dda91[_0x3f3025(0x16d)][_0x3f3025(0x1a0)])[_0x3f3025(0x195)]((_0x39e8a8,_0x2b3f95)=>{const _0x51620b=_0x3f3025,_0x462bf3=_0x24ecea[_0x51620b(0x178)]('[data-index=\x22'+_0x2b3f95+'\x22]');if(_0x462bf3)_0x39e8a8[_0x51620b(0x190)](_0x462bf3);return _0x39e8a8;},[]);}_0x5dda91['data']['createButtonListener']=function(_0xecf7a7){return function(_0x245b0e){const _0x291213=_0x3ec8,_0x363edc=_0x5dda91[_0x291213(0x16d)]['id'];var _0x302892=_0x5dda91[_0x291213(0x16d)]['tinderContainer'][_0x291213(0x1a9)](_0x291213(0x17a)+_0x363edc+_0x291213(0x173)),_0x116ba0=document[_0x291213(0x1b1)][_0x291213(0x17c)]*1.5;if(!_0x302892[_0x291213(0x1bb)])return![];var _0x488927=_0x8cf9f6(_0x302892);_0x488927[_0x291213(0x188)][_0x291213(0x1ad)]('removed'),_0xecf7a7?_0x488927[_0x291213(0x1b8)]['transform']=_0x291213(0x177)+_0x116ba0+_0x291213(0x194):_0x488927[_0x291213(0x1b8)][_0x291213(0x175)]=_0x291213(0x196)+_0x116ba0+_0x291213(0x1b6),_0x5dda91[_0x291213(0x16d)][_0x291213(0x18d)](_0x488927,_0xecf7a7?_0x291213(0x1c2):_0x291213(0x1b5)),_0x5dda91['data'][_0x291213(0x1aa)](),_0x245b0e&&_0x245b0e[_0x291213(0x1be)]();};},_0x5dda91[_0x108b80(0x16d)][_0x108b80(0x1b4)]=function(){return function(_0x4e5d3f){const _0x38e20f=_0x3ec8,_0x3f1791=_0x5dda91[_0x38e20f(0x16d)]['id'],_0x456909=_0x5dda91['data'][_0x38e20f(0x19d)][_0x38e20f(0x1a9)](_0x38e20f(0x1a6)+_0x3f1791+_0x38e20f(0x173)),_0x16962a=_0x456909[_0x38e20f(0x1bb)];_0x456909[_0x38e20f(0x16e)](_0x1a38c4=>{const _0x5eb7b9=_0x38e20f;if(_0x1a38c4[_0x5eb7b9(0x1b8)][_0x5eb7b9(0x16f)]!==_0x456909[_0x5eb7b9(0x1bb)][_0x5eb7b9(0x18c)]()){_0x1a38c4[_0x5eb7b9(0x1b8)][_0x5eb7b9(0x16f)]=(parseInt(_0x1a38c4[_0x5eb7b9(0x1b8)][_0x5eb7b9(0x16f)])+0x1)[_0x5eb7b9(0x18c)]();var _0x563ea9=_0x16962a-_0x1a38c4[_0x5eb7b9(0x1b8)][_0x5eb7b9(0x16f)];_0x1a38c4[_0x5eb7b9(0x1b8)][_0x5eb7b9(0x175)]=_0x5eb7b9(0x18b)+(0x14-_0x563ea9)/0x14+_0x5eb7b9(0x1a5)+0x1e*_0x563ea9+_0x5eb7b9(0x1c1),_0x1a38c4['style'][_0x5eb7b9(0x17b)]=0x1;}else{_0x5dda91[_0x5eb7b9(0x16d)][_0x5eb7b9(0x18d)](_0x1a38c4,'sendToBack'),_0x1a38c4['style']['zIndex']='1';var _0x563ea9=_0x16962a-_0x1a38c4[_0x5eb7b9(0x1b8)][_0x5eb7b9(0x16f)];_0x1a38c4[_0x5eb7b9(0x1b8)]['transform']=_0x5eb7b9(0x18b)+(0x14-_0x563ea9)/0x14+')\x20translateY(-'+0x1e*_0x563ea9+_0x5eb7b9(0x1c1),_0x1a38c4[_0x5eb7b9(0x1b8)][_0x5eb7b9(0x17b)]=0x1;}});};},_0x5dda91['data'][_0x108b80(0x171)]=function(){const _0x3de06d=_0x108b80,_0x3f0426=_0x5dda91[_0x3de06d(0x16d)]['id'];return function(_0x17fdd7){const _0xca100=_0x3de06d;_0x5dda91[_0xca100(0x16d)][_0xca100(0x1a8)](_0x5dda91['data'][_0xca100(0x1c3)]),_0x5dda91[_0xca100(0x1ae)]('card_reloaded');var _0x19046a=_0x5dda91[_0xca100(0x16d)][_0xca100(0x19d)][_0xca100(0x1a9)](_0xca100(0x1a6)+_0x3f0426+_0xca100(0x18a));_0x19046a[_0xca100(0x16e)](_0xde9101=>{const _0x669570=_0xca100;_0xde9101[_0x669570(0x188)][_0x669570(0x1b9)](_0x669570(0x1c0)),_0xde9101[_0x669570(0x1b8)][_0x669570(0x175)]='';}),_0x5dda91[_0xca100(0x16d)]['initCards'](),_0x5dda91[_0xca100(0x17f)]('type_of_last_action',_0xca100(0x170));};},_0x5dda91[_0x108b80(0x16d)][_0x108b80(0x185)]=function(_0x2e4afd){return function(_0xeae2da){const _0x289a01=_0x3ec8;_0x2e4afd[_0x289a01(0x188)][_0x289a01(0x1b9)](_0x289a01(0x172)),_0x5dda91[_0x289a01(0x16d)]['tinderContainer'][_0x289a01(0x188)]['remove'](_0x289a01(0x180)),_0x5dda91[_0x289a01(0x16d)][_0x289a01(0x19d)][_0x289a01(0x188)]['remove'](_0x289a01(0x1a4));const _0x1ee4a4=document['body'][_0x289a01(0x17c)],_0x3d5d5a=Math[_0x289a01(0x189)](_0xeae2da[_0x289a01(0x176)])<0x50||Math['abs'](_0xeae2da[_0x289a01(0x17d)])<0.5;_0xeae2da[_0x289a01(0x1bd)]['classList'][_0x289a01(0x19a)](_0x289a01(0x1c0),!_0x3d5d5a);if(_0x3d5d5a)_0xeae2da[_0x289a01(0x1bd)]['style'][_0x289a01(0x175)]='';else{const _0x4ef46a=Math['max'](Math[_0x289a01(0x189)](_0xeae2da[_0x289a01(0x17d)])*_0x1ee4a4,_0x1ee4a4);let _0x44af96=_0xeae2da[_0x289a01(0x176)]>0x0?_0x4ef46a:-_0x4ef46a;const _0x39a976=Math[_0x289a01(0x189)](_0xeae2da['velocityY'])*_0x1ee4a4;let _0x1bb64d=_0xeae2da['deltaY']>0x0?_0x39a976:-_0x39a976;const _0x2e45c8=_0xeae2da[_0x289a01(0x176)]*0.03,_0xe8688=_0xeae2da[_0x289a01(0x1a7)]/0x50,_0x3a377e=_0x2e45c8*_0xe8688,_0x5ef324=_0x2e4afd['clientWidth'],{clientHeight:_0x31dbee,clientWidth:_0x1ad484}=document['body'];if(_0x44af96>0x0&&_0x44af96<_0x1ad484+_0x5ef324)_0x44af96+=_0x1ad484+_0x5ef324;else{if(_0x44af96<0x0&&_0x44af96>-_0x5ef324+_0x44af96)_0x44af96-=_0x1ad484+_0x5ef324;}if(_0x1bb64d>_0x31dbee)_0x1bb64d=_0x31dbee-_0x5ef324-_0x5ef324/0x32;_0xeae2da[_0x289a01(0x1bd)][_0x289a01(0x1b8)]['transform']=_0x289a01(0x177)+_0x44af96+_0x289a01(0x1a3)+(_0x1bb64d+_0xeae2da['deltaY'])+_0x289a01(0x1af)+_0x3a377e+'deg)',_0x5dda91[_0x289a01(0x16d)][_0x289a01(0x18d)](_0x2e4afd,_0x44af96>0x0?_0x289a01(0x1c2):_0x289a01(0x1b5)),_0x5dda91[_0x289a01(0x16d)][_0x289a01(0x1aa)]();}};};}
-	initialize(instance, context);
-}
+function(instance, context) {
+	instance.data.id = Date.now().toString(36) + Math.random().toString(36).substr(2);
+  
+	instance.data.stateHandler = function (el, type) {
+	  const index = Number(el.dataset.index);
+	  const { leftCards } = instance.data;
+	  leftCards.delete(index);
+  
+	  if (type === "like") {
+		instance.data.likeCards.add(index);
+		instance.publishState("liked_cards", Array.from(instance.data.likeCards));
+		instance.triggerEvent("card_liked")
+	  } else if (type === "dislike") {
+		instance.data.dislikeCards.add(index);
+		instance.publishState("disliked_cards", Array.from(instance.data.dislikeCards));
+		instance.triggerEvent("card_disliked")
+	  } else if (type === "sendToBack") {
+		leftCards.delete(index);
+		leftCards.add(index); // to the end
+  
+		instance.data.leftCards[0];
+		instance.triggerEvent("card_send_to_back")
+	  }
+	  const indexUpperCard = Array.from(leftCards)[0];
+	  instance.data.indexUpperCard = indexUpperCard;
+  
+	  instance.publishState("index_of_last_card", index);
+	  instance.publishState("index_of_upper_card", indexUpperCard);
+	  instance.publishState("type_of_last_action", type);
+	  instance.publishState("left_cards", Array.from(leftCards));
+	  instance.data.leftCards = leftCards
+	};
+  
+	instance.data.initStateCards = function (arrList) {
+	  const leftCards = new Set();
+	  instance.data.leftCards = leftCards;
+	  arrList.forEach((_, index) => {
+		leftCards.add(index + 1);
+	  });
+  
+	  instance.data.dislikeCards = new Set();
+	  instance.data.likeCards = new Set();
+
+
+	  const indexUpperCard = Array.from(leftCards)[0];
+	  instance.data.indexUpperCard = indexUpperCard;
+  
+	  instance.publishState("index_of_upper_card", indexUpperCard);
+	  instance.publishState("liked_cards", Array.from(instance.data.likeCards));
+	  instance.publishState("disliked_cards", Array.from(instance.data.dislikeCards));
+	  instance.publishState("left_cards", Array.from(leftCards));
+	  instance.data.leftCards = leftCards
+	};
+  
+	instance.data.initCards = function () {
+	  const instanceID = instance.data.id;
+	  const tinderContainer = instance.data.tinderContainer
+	  //var newCards = instance.data.tinderContainer.querySelectorAll(".tinder--card" + instanceID + ":not(.removed)");
+	  const newCards = getCardsInTheOrder()
+	  newCards.forEach(function (card, index) {
+		// card.style.zIndex = allCards.length - index; // this is a not better way!
+		card.style.zIndex = newCards.length - index; // this is the right way!
+		card.style.transform = "scale(" + (20 - index) / 20 + ") translateY(-" + 30 * index + "px)";
+		card.style.opacity = (10 - index) / 10;
+	  });
+	  
+  
+	  tinderContainer.classList.add("loaded");
+	}
+
+	function getUpperCard(cards) {
+		const instanceID = instance.data.id;
+		cards = cards ? cards : instance.data.tinderContainer.querySelectorAll(".tinder--card" + instanceID + ":not(.removed)");
+		const upperCard = [...cards].find(el=>Number(el.dataset.index) === instance.data.indexUpperCard)
+		return upperCard
+	}
+
+	
+	function getCardsInTheOrder() {
+		const instanceID = instance.data.id;
+		const leftCardsElementsParent =  instance.data.tinderContainer.querySelector(".tinder--card" + instanceID + ":not(.removed)")?.parentElement;
+		if(!leftCardsElementsParent) return []
+		return Array.from(instance.data.leftCards).reduce((acc, index) => {
+			const el = leftCardsElementsParent.querySelector('[data-index="'+ index +'"]')
+			if(el) acc.push(el) 
+			return acc
+		}, [])
+	}
+  
+	instance.data.createButtonListener = function (love) {
+	  return function (event) {
+		const instanceID = instance.data.id;
+		var cards = instance.data.tinderContainer.querySelectorAll(".tinder--card" + instanceID + ":not(.removed)");
+		var moveOutWidth = document.body.clientWidth * 1.5;
+  
+		if (!cards.length) return false;
+  
+		var card = getUpperCard(cards);
+  
+		card.classList.add("removed");
+  
+		if (love) {
+		  card.style.transform = "translate(" + moveOutWidth + "px, -100px) rotate(-30deg)";
+		} else {
+		  card.style.transform = "translate(-" + moveOutWidth + "px, -100px) rotate(30deg)";
+		}
+  
+		instance.data.stateHandler (card, love ? "like" : "dislike")
+		instance.data.initCards();
+  
+		event && event.preventDefault();
+	  };
+	}
+  
+	instance.data.sendFrontToBack = function () {
+	  return function (event) {
+		  
+		  const instanceID = instance.data.id;
+		  const cards = instance.data.tinderContainer.querySelectorAll("div.tinder--card" + instanceID + ":not(.removed)")
+		  const cardsNumber = cards.length;
+  
+		cards.forEach((card) => {
+		  if (card.style.zIndex !== cards.length.toString()) {
+			card.style.zIndex = (parseInt(card.style.zIndex) + 1).toString();
+			var index = cardsNumber - card.style.zIndex;
+			card.style.transform = "scale(" + (20 - index) / 20 + ") translateY(-" + 30 * index + "px)";
+			card.style.opacity = 1;
+		  } else {
+			instance.data.stateHandler(card, "sendToBack"); //06.10.2023 first card detect
+			card.style.zIndex = "1";
+			var index = cardsNumber - card.style.zIndex;
+			card.style.transform = "scale(" + (20 - index) / 20 + ") translateY(-" + 30 * index + "px)";
+			card.style.opacity = 1;
+		  }
+		});
+	  };
+	}
+  
+	instance.data.reloadCards = function () {
+	  const instanceID = instance.data.id;
+	  return function (event) {
+		instance.data.initStateCards(instance.data.arrList);
+		instance.triggerEvent("card_reloaded")
+  
+		var cards = instance.data.tinderContainer.querySelectorAll("div.tinder--card" + instanceID + ".removed");
+		cards.forEach((card) => {
+		  card.classList.remove("removed");
+		  card.style.transform = "";
+		});
+		instance.data.initCards();
+		instance.publishState("type_of_last_action", "Reload Cards");
+	  };
+	}
+
+	instance.data.hammertime_panned_handler = function(el) {
+		return function (event) {
+			el.classList.remove("moving");
+			instance.data.tinderContainer.classList.remove("tinder_love");
+			instance.data.tinderContainer.classList.remove("tinder_nope");
+	
+			const moveOutWidth = document.body.clientWidth;
+			const keep = Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
+	
+			event.target.classList.toggle("removed", !keep);
+	
+			if (keep) {
+			  event.target.style.transform = "";
+			} else {
+			  const endX = Math.max(
+				Math.abs(event.velocityX) * moveOutWidth,
+				moveOutWidth
+			  );
+			  let toX = event.deltaX > 0 ? endX : -endX;
+			  const endY = Math.abs(event.velocityY) * moveOutWidth;
+			  let toY = event.deltaY > 0 ? endY : -endY;
+			  const xMulti = event.deltaX * 0.03;
+			  const yMulti = event.deltaY / 80;
+			  const rotate = xMulti * yMulti;
+				
+				//adjust x coordinate
+			const elementWidth = el.clientWidth;
+			const {clientHeight, clientWidth} = document.body
+			if(toX > 0 && toX < clientWidth + elementWidth) toX += clientWidth + elementWidth
+			else if (toX < 0 && toX > -elementWidth + toX) toX -= clientWidth + elementWidth
+	
+			if(toY > clientHeight) toY = clientHeight - elementWidth - elementWidth/50
+	
+			  event.target.style.transform = "translate(" + toX + "px, " + (toY + event.deltaY) + "px) rotate(" + rotate + "deg)";
+			  instance.data.stateHandler(el, toX > 0 ? "like" : "dislike");
+			  instance.data.initCards();
+			}
+		}
+	}
+  }
+  

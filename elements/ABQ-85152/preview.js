@@ -6,13 +6,6 @@ function(instance, properties) {
     ////s.src = "https://hammerjs.github.io/dist/hammer.js";
     //$("body").append(s);
     //removes glitch of appending two children to instance
-
-    let like_icon_parts = properties.like_icon.split(' ');
-	let like_icon = like_icon_parts[like_icon_parts.length - 1];
-
-	let reject_icon_parts = properties.reject_icon.split(' ');
-	let reject_icon = reject_icon_parts[reject_icon_parts.length - 1];
-
     if (instance.canvas[0].children.length < 1){
         
         
@@ -62,12 +55,12 @@ function(instance, properties) {
       margin-left: -50px;
     }
 
-    .tinder_love .${like_icon} {
+    .tinder_love .fa-heart {
       opacity: 0.7;
       transform: scale(1);
     }
 
-    .tinder_nope .${reject_icon} {
+    .tinder_nope .fa-remove {
       opacity: 0.7;
       transform: scale(1);
     }
@@ -181,8 +174,8 @@ function(instance, properties) {
 
     <div class="tinder">
       <div class="tinder--status">
-        <i class="${properties.reject_icon}"></i>
-        <i class="${properties.like_icon}t"></i>
+        <i class="fa fa-remove"></i>
+        <i class="fa fa-heart"></i>
       </div>
 
       <div class="tinder--cards" id="cardsContainer">
